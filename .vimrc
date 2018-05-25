@@ -54,6 +54,7 @@ filetype plugin indent on    " required
 " NERDTree settings
 autocmd vimenter * NERDTree | wincmd p
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+nmap <F6> :NERDTreeToggle<CR>
 
 " Split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -75,3 +76,8 @@ set softtabstop=4
 set expandtab
 set showcmd
 set showmatch
+
+" color
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
