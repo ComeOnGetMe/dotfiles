@@ -88,3 +88,7 @@ source $ZSH/oh-my-zsh.sh
 function cl {
   builtin cd "$@" && ls -F
 }
+
+function dockersh {
+  sudo docker exec -it `sudo docker ps | sed -n "/$1/p" | awk '{print $1}'` bash
+}
