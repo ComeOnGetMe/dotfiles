@@ -21,6 +21,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'christoomey/vim-tmux-navigator'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -52,7 +53,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " NERDTree settings
-autocmd vimenter * NERDTree | wincmd p
+" autocmd vimenter * NERDTree | wincmd p
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 nmap <F6> :NERDTreeToggle<CR>
 
@@ -81,3 +82,6 @@ set showmatch
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
+" fzf support
+set rtp+=~/.fzf
