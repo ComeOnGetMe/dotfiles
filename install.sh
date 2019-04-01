@@ -5,4 +5,8 @@ set -x
 ln -s ./.tmux.conf ~/.tmux.conf
 ln -s ./.gitconfig ~/.gitconfig
 
-cat ./.zshrc >> ~/.zshrc
+cat ./.functions >> ~/.zshrc  # TODO: prevent duplicate appends
+
+tmux source-file ~/.tmux.conf
+
+echo "DON'T FORGET TO SOURCE YOUR ~/.[bash/zsh/fsh]rc!"
