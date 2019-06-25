@@ -2,8 +2,8 @@ set -x
 
 ./install-vim.sh
 
-ln -s ./.tmux.conf ~/.tmux.conf
-ln -s ./.gitconfig ~/.gitconfig
+cp ./.tmux.conf ~/.tmux.conf
+cp ./.gitconfig ~/.gitconfig
 
 cat ./.functions >> ~/.zshrc  # TODO: prevent duplicate appends
 
