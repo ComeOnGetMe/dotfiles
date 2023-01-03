@@ -1,3 +1,4 @@
+# You should have ohmyzsh, tmux installed before this
 set -x
 
 ./install-vim.sh
@@ -5,8 +6,8 @@ set -x
 cp ./.tmux.conf ~/.tmux.conf
 cp ./.gitconfig ~/.gitconfig
 
-cat ./.functions >> ~/.zshrc  # TODO: prevent duplicate appends
+cat ./.zshrc_functions >> ~/.zshrc  # TODO: prevent duplicate appends
 
 tmux source-file ~/.tmux.conf
 
-echo "DON'T FORGET TO SOURCE YOUR ~/.[bash/zsh/fsh]rc!"
+echo "DON'T FORGET TO `source ~/.zshrc` "

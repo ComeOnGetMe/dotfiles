@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/zhipeng/.config/SogouPY'
-let g:netrw_dirhist_2='/home/zhipeng.yan/Desktop/testopencv/CMakeLists.txt'
-let g:netrw_dirhist_3='/home/zhipeng.yan/Desktop/testopencv'
-let g:netrw_dirhist_4='/home/zhipeng.yan/Desktop/camera-stitching/data'
