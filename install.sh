@@ -24,7 +24,7 @@ cp ./.tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 
 # custom shell function
-cat ./.zshrc_functions >> ~/.zshrc  # TODO: prevent duplicate appends
+cat ./shell_functions >> ~/.zshrc  # TODO: prevent duplicate appends
 
 
 echo "DON'T FORGET TO `source ~/.zshrc` "
