@@ -103,8 +103,6 @@ ENV/
 # pycharm
 .idea/
 
-*.ipynb
 *.html
-*.png
 *.swp
 *.pkl
